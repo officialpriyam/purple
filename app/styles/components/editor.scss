@@ -1,0 +1,135 @@
+:root {
+  --cm-backgroundColor: var(--purple-elements-editor-backgroundColor, var(--purple-elements-bg-depth-1));
+  --cm-textColor: var(--purple-elements-editor-textColor, var(--purple-elements-textPrimary));
+
+  /* Gutter */
+
+  --cm-gutter-backgroundColor: var(--purple-elements-editor-gutter-backgroundColor, var(--cm-backgroundColor));
+  --cm-gutter-textColor: var(--purple-elements-editor-gutter-textColor, var(--purple-elements-textSecondary));
+  --cm-gutter-activeLineTextColor: var(--purple-elements-editor-gutter-activeLineTextColor, var(--cm-gutter-textColor));
+
+  /* Fold Gutter */
+
+  --cm-foldGutter-textColor: var(--purple-elements-editor-foldGutter-textColor, var(--cm-gutter-textColor));
+  --cm-foldGutter-textColorHover: var(--purple-elements-editor-foldGutter-textColorHover, var(--cm-gutter-textColor));
+
+  /* Active Line */
+
+  --cm-activeLineBackgroundColor: var(--purple-elements-editor-activeLineBackgroundColor, rgb(224 231 235 / 30%));
+
+  /* Cursor */
+
+  --cm-cursor-width: 2px;
+  --cm-cursor-backgroundColor: var(--purple-elements-editor-cursorColor, var(--purple-elements-textSecondary));
+
+  /* Matching Brackets */
+
+  --cm-matching-bracket: var(--purple-elements-editor-matchingBracketBackgroundColor, rgb(50 140 130 / 0.3));
+
+  /* Selection */
+
+  --cm-selection-backgroundColorFocused: var(--purple-elements-editor-selection-backgroundColor, #42b4ff);
+  --cm-selection-backgroundOpacityFocused: var(--purple-elements-editor-selection-backgroundOpacity, 0.3);
+  --cm-selection-backgroundColorBlured: var(--purple-elements-editor-selection-inactiveBackgroundColor, #c9e9ff);
+  --cm-selection-backgroundOpacityBlured: var(--purple-elements-editor-selection-inactiveBackgroundOpacity, 0.3);
+
+  /* Panels */
+
+  --cm-panels-borderColor: var(--purple-elements-editor-panels-borderColor, var(--purple-elements-borderColor));
+
+  /* Search */
+
+  --cm-search-backgroundColor: var(--purple-elements-editor-search-backgroundColor, var(--cm-backgroundColor));
+  --cm-search-textColor: var(--purple-elements-editor-search-textColor, var(--purple-elements-textSecondary));
+  --cm-search-closeButton-backgroundColor: var(--purple-elements-editor-search-closeButton-backgroundColor, transparent);
+
+  --cm-search-closeButton-backgroundColorHover: var(
+    --purple-elements-editor-search-closeButton-backgroundColorHover,
+    var(--purple-elements-item-backgroundActive)
+  );
+
+  --cm-search-closeButton-textColor: var(
+    --purple-elements-editor-search-closeButton-textColor,
+    var(--purple-elements-item-contentDefault)
+  );
+
+  --cm-search-closeButton-textColorHover: var(
+    --purple-elements-editor-search-closeButton-textColorHover,
+    var(--purple-elements-item-contentActive)
+  );
+
+  --cm-search-button-backgroundColor: var(
+    --purple-elements-editor-search-button-backgroundColor,
+    var(--purple-elements-item-backgroundDefault)
+  );
+
+  --cm-search-button-backgroundColorHover: var(
+    --purple-elements-editor-search-button-backgroundColorHover,
+    var(--purple-elements-item-backgroundActive)
+  );
+
+  --cm-search-button-textColor: var(--purple-elements-editor-search-button-textColor, var(--purple-elements-textSecondary));
+
+  --cm-search-button-textColorHover: var(
+    --purple-elements-editor-search-button-textColorHover,
+    var(--purple-elements-textPrimary)
+  );
+
+  --cm-search-button-borderColor: var(--purple-elements-editor-search-button-borderColor, transparent);
+  --cm-search-button-borderColorHover: var(--purple-elements-editor-search-button-borderColorHover, transparent);
+
+  --cm-search-button-borderColorFocused: var(
+    --purple-elements-editor-search-button-borderColorFocused,
+    var(--purple-elements-borderColorActive)
+  );
+
+  --cm-search-input-backgroundColor: var(--purple-elements-editor-search-input-backgroundColor, transparent);
+  --cm-search-input-textColor: var(--purple-elements-editor-search-input-textColor, var(--purple-elements-textPrimary));
+  --cm-search-input-borderColor: var(--purple-elements-editor-search-input-borderColor, var(--purple-elements-borderColor));
+
+  --cm-search-input-borderColorFocused: var(
+    --purple-elements-editor-search-input-borderColorFocused,
+    var(--purple-elements-borderColorActive)
+  );
+
+  /* Tooltip */
+
+  --cm-tooltip-backgroundColor: var(--purple-elements-editor-tooltip-backgroundColor, var(--cm-backgroundColor));
+  --cm-tooltip-textColor: var(--purple-elements-editor-tooltip-textColor, var(--purple-elements-textPrimary));
+
+  --cm-tooltip-backgroundColorSelected: var(
+    --purple-elements-editor-tooltip-backgroundColorSelected,
+    theme('colors.alpha.accent.30')
+  );
+
+  --cm-tooltip-textColorSelected: var(
+    --purple-elements-editor-tooltip-textColorSelected,
+    var(--purple-elements-textPrimary)
+  );
+
+  --cm-tooltip-borderColor: var(--purple-elements-editor-tooltip-borderColor, var(--purple-elements-borderColor));
+
+  --cm-searchMatch-backgroundColor: var(--purple-elements-editor-searchMatch-backgroundColor, rgba(234, 92, 0, 0.33));
+}
+
+html[data-theme='light'] {
+  --purple-elements-editor-gutter-textColor: #237893;
+  --purple-elements-editor-gutter-activeLineTextColor: var(--purple-elements-textPrimary);
+  --purple-elements-editor-foldGutter-textColorHover: var(--purple-elements-textPrimary);
+  --purple-elements-editor-activeLineBackgroundColor: rgb(50 53 63 / 5%);
+  --purple-elements-editor-tooltip-backgroundColorSelected: theme('colors.alpha.accent.20');
+  --purple-elements-editor-search-button-backgroundColor: theme('colors.gray.100');
+  --purple-elements-editor-search-button-backgroundColorHover: theme('colors.alpha.gray.10');
+}
+
+html[data-theme='dark'] {
+  --cm-backgroundColor: var(--purple-elements-bg-depth-2);
+  --purple-elements-editor-gutter-textColor: var(--purple-elements-textTertiary);
+  --purple-elements-editor-gutter-activeLineTextColor: var(--purple-elements-textSecondary);
+  --purple-elements-editor-selection-inactiveBackgroundOpacity: 0.3;
+  --purple-elements-editor-activeLineBackgroundColor: rgb(50 53 63 / 50%);
+  --purple-elements-editor-foldGutter-textColorHover: var(--purple-elements-textPrimary);
+  --purple-elements-editor-matchingBracketBackgroundColor: rgba(66, 180, 255, 0.3);
+  --purple-elements-editor-search-button-backgroundColor: theme('colors.gray.800');
+  --purple-elements-editor-search-button-backgroundColorHover: theme('colors.alpha.white.10');
+}
